@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Rainforest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="welcomeMessage" , style="color: rgb(19, 5, 19);
+    border: 3px;">Welcome to the Rainforest</div>
+
+   <div style="display:block; ">
+        <button id="treeButton" onclick="incrementCounter()">
+            Click Me</button>
+        <div id="counter", style="color: rgb(195, 13, 13);">0
+            <div class=" image1">
+    
+            </div>
+        </div>
+    </div>
+
+    <div id="icons">
+        <div class="icon">boost⚡️</div>
+        <div class="icon">Earn🎁</div>
+        <div class="icon">Cards💳</div>
+        <div class="icon">Wallet💎</div>
+    </div>
+    
+    <script>
+        let counter= 0;
+
+        function incrementCounter() {
+            counter += 1;
+            document.getElementById('counter').innerText = 'Counter: ' + counter;
+            document.getElementById('treeButton').style.transform = 'rotate(-10deg)';
+            setTimeout(() => {
+                document.getElementById('treeButton').style.transform = 'rotate(0deg)';
+            }, 100);
+        }
+
+
+    </script>
+    
+</body>
+</html>

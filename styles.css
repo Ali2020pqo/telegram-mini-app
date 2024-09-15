@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://example.com/rainforest.jpg'); /* تصویر جنگل بارانی */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+#welcomeMessage {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#treeButton {
+    background-color: #8B4513; /* رنگ قهوه‌ای تنه درخت */
+    color: green;
+    border: 5px solid green;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#treeButton:hover {
+    transform: rotate(-3deg);
+}
+
+#counter {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#icons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+    text-shadow: 2px 2px 5px black;
+}
+
+.icon::before {
+    content: '🌿'; /* آیکون برگ بالای هر آیکون */
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
